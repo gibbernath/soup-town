@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>GIBSON BERNATH</title>
+	<style type="text/css">body {
+    background-color: rgb(255, 255, 255);
+}
+
+.menu {
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 70px;
+    }
+
+.name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.name:hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    content: url(namehov.jpg);    
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.songtitle {
+    text-align: center;
+}
+
+.paradoxhand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.indoorhand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.indoorhand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.beeptext {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.paradoxtext {
+    /* text-align: center;    */ 
+    font-stretch: expanded;  
+    text-align: justify;
+    line-height: 1.5; 
+}
+
+.headtext {
+    /* text-align: center;    */ 
+    font-stretch: expanded;  
+    text-align: justify;
+    line-height: 1.5; 
+    font-size: 18px;
+}
+
+.kittypic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.enjoy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    /* padding-right: 30px; */
+}
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 0.1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 70px;
+  height: 70px;
+}
+
+.date {
+    text-align: right;
+}
+	</style>
+	<script>
+    function magnify(imgID, zoom) {
+      var img, glass, w, h, bw;
+      img = document.getElementById(imgID);
+      /*create magnifier glass:*/
+      glass = document.createElement("DIV");
+      glass.setAttribute("class", "img-magnifier-glass");
+      /*insert magnifier glass:*/
+      img.parentElement.insertBefore(glass, img);
+      /*set background properties for the magnifier glass:*/
+      glass.style.backgroundImage = "url('" + img.src + "')";
+      glass.style.backgroundRepeat = "no-repeat";
+      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+      bw = 3;
+      w = glass.offsetWidth / 2;
+      h = glass.offsetHeight / 2;
+      /*execute a function when someone moves the magnifier glass over the image:*/
+      glass.addEventListener("mousemove", moveMagnifier);
+      img.addEventListener("mousemove", moveMagnifier);
+      /*and also for touch screens:*/
+      glass.addEventListener("touchmove", moveMagnifier);
+      img.addEventListener("touchmove", moveMagnifier);
+      function moveMagnifier(e) {
+        var pos, x, y;
+        /*prevent any other actions that may occur when moving over the image*/
+        e.preventDefault();
+        /*get the cursor's x and y positions:*/
+        pos = getCursorPos(e);
+        x = pos.x;
+        y = pos.y;
+        /*prevent the magnifier glass from being positioned outside the image:*/
+        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+        if (x < w / zoom) {x = w / zoom;}
+        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+        if (y < h / zoom) {y = h / zoom;}
+        /*set the position of the magnifier glass:*/
+        glass.style.left = (x - w) + "px";
+        glass.style.top = (y - h) + "px";
+        /*display what the magnifier glass "sees":*/
+        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+      }
+      function getCursorPos(e) {
+        var a, x = 0, y = 0;
+        e = e || window.event;
+        /*get the x and y positions of the image:*/
+        a = img.getBoundingClientRect();
+        /*calculate the cursor's x and y coordinates, relative to the image:*/
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+        /*consider any page scrolling:*/
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return {x : x, y : y};
+      }
+    }
+    </script><script>
+	function inspiration ( ) {
+		alert("This website was built completely from scratch by the author with his simple knowledge of html and css over the course of a couple days. It is updated locally when applicable, and runs on the broader 'soup' server (see soup.town) which is a series of interconnecting websites that explores different digital aesthetics and ideas (a freshman year project of I did with a friend)"); 
+	}
+</script>
+</head>
+<body>
+<div class="menu"><a href="gibsonbernath.html"><img class="name" src="name.jpg" /></a> <!-- <img class="dot" src="dot.jpg"> --></div>
+
+<p></p>
+
+<p></p>
+
+<div class="content">
+<div class="head"><img class="header" src="buildhand.jpg" />
+<p class="headtext"><i>at wesleyan, i am lucky to be surrounded by and immersed in a rich history of experimental electronic music composition, research, and development. in the past year i have pivoted a large amount of my focus and work within the music major towards taking advantage of this unique environment. among some newfound passions, one is for the garbage &ndash; namely the electronic garbage. below are three projects, each of which is largely or wholly made from salvaged and used electronic &#39;garbage&#39;... </i></p>
+</div>
+
+<div class="paradox">
+<p class="songtitle"><img class="paradoxhand" src="kittytext.jpg" /></p>
+
+<div class="img-magnifier-container"><img height="300" id="myimage" src="hellokitty.jpg" width="500" /></div>
+<script>
+                /* Initiate Magnify Function
+                with the id of the image, and the strength of the magnifier glass:*/
+                magnify("myimage", 2);
+                
+            </script>
+
+<p class="date">NOVEMBER 2021</p>
+
+<p class="paradoxtext">above is the first version of what will hopefully be an ongoing series of <strong>hello kitty midi controllers</strong>, each with different ranges of midi capabilities depending on the size of the box.</p>
+
+<p class="paradoxtext">this controller runs on the teensy lc and connects to any daw with a standard micro-usb cable.</p>
+</div>
+<br />
+<br />
+<br />
+&nbsp;
+<div class="gaspro">
+<p class="songtitle"><img class="indoorhand" src="vapehand.jpg" /></p>
+
+<div class="img-magnifier-container"><img height="330" id="myimage2" src="vapemic.jpg" width="500" /></div>
+
+<p class="paradoxtext" style="text-align: right;">JANUARY 2022</p>
+
+<p class="paradoxtext">existing in a generation of kids addicted to vaporized nicotine is what prompted the idea for the <strong>vape mic</strong>, which aims to reduce waste from single use vapes by repurposing them as housing for microphones.</p>
+
+<p class="paradoxtext">this model uses a microphone element salvaged from a discarded childrens toy, an altoids tin to house the power supply, and an aux cable from a pair of free air canada earbuds i acquired on a recent trip to nova scotia.</p>
+<br />
+<br />
+<br />
+&nbsp;
+<div class="phonemic">
+<p class="songtitle"><img class="beeptext" src="beeptext.jpg" /></p>
+
+<div class="img-magnifier-container"><img height="330" id="myimage2" src="beepphone.jpg" width="500" /></div>
+
+<p class="paradoxtext" style="text-align: right;">OCTOBER 2021</p>
+
+<p class="paradoxtext">around august, my school decided to do a complete overhaul of the telephone systems in faculty offices and threw more than 100 office phones into the electronics recycling area. upon my weekly visit to this area i snagged as many as i could carry and brought them back to my dorm...</p>
+
+<p class="paradoxtext">the <strong>beep phone</strong> employs the concept that <strong>any speaker can be reverse wired to function as a microphone</strong>, and vice versa. after some experimentation i figured out which wires connected to the speaker (top) which boasts the beautiful, crunchy &#39;telephone filtering&#39;&nbsp;sound, rewired it to function as a microphone, and soldered it to a 1/4&quot;&nbsp;plug to make it accessible for amps and interfaces with no plug in power needed.</p>
+
+<p class="paradoxtext">here&#39;s an example of the mic quality:</p>
+
+<audio controls=""><source src="beepdemo.mp3" type="audio/mp4" /></audio>
+<br />
+<br />
+<br />
+<br />
+<a href="#"><img class="enjoy" src="enjoy.jpg" /></a>
+
+<center>
+<p style="color: rgb(0, 0, 0); font-size: 12px; padding-right: 10px;"><i>gibson bernath - <u onclick="inspiration( );"><a href="#" style="text-decoration: none; color: black;">website design information</a></u> - last updated:</i> september 2022</p>
+</center>
+</div>
+</div>
+</div>
+
+<p></p>
+
+<p></p>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>b-side</title>
+	<meta name="generator" content="BBEdit 13.0" />
+	<link rel="shortcut icon" type="image/jpg" href="/favicon2.png"/>
+</head>
+<style>
+body {
+background-color: white;
+background-attachment: fixed;
+}
+.desc {
+color: white;
+font-family:Arial, Helvetica, sans-serif;
+}
+.next {
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+    width: 150px;
+}
+
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  
+}
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+</style> 
+<body>
+<h1>coffee cup kids</h1> 
+<img src="bsideheader.gif" width=500px height=125px>
+  
+    
+
+  <br><br>
+  <div class="border">
+    <div style="text-align:center"> 
+  <video id="video1" width="700px" controls>
+    <source src="bsidefin.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+</div> 
+<div style="text-align:center"> 
+    <button onclick="playPause()">Play/Pause</button> 
+</div>
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1080; 
+} 
+
+function makeSmall() { 
+    myVideo.width =280 ; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 1080; 
+} 
+</script> 
+
+
+
+</body> 
+</html>
+</body>
+</html>

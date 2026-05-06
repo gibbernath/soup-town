@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soup University</title>
+    <meta charset="UTF-8">
+    <link rel='icon' href='soupufavicon.png' type='image/x-icon'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+    body {
+        background-color: white;
+        margin: 0px;
+    }
+
+    .topheader {
+        background-color: rgb(18, 0, 82);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .headerinfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .search-container {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+    input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 240px;
+        margin: 0px;
+        padding: 14px;
+    }
+
+    input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+
+    .login {
+        position: absolute;
+        right: 300px;
+        top: 20px;
+    }
+
+    .index {
+        position: absolute;
+        right: 353px;
+        top: 20px;
+    }
+
+    .email {
+        position: absolute;
+        right: 433px;
+        top: 20px;
+    }
+
+    .news {
+        position: absolute;
+        right: 483px;
+        top: 20px;
+    }
+
+    .navbar {
+        background-color: rgb(157, 191, 255);
+        overflow: hidden;
+    }
+
+    .navinfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .loglink {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        color: white; 
+        font-size: 16px;
+
+    }
+    .shopstuff {
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(219, 219,219);
+        width: 400px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        color: black;
+        padding: 15px;
+        padding-bottom: 15px;
+        z-index: 0;
+        line-height: 15px;
+
+    }
+
+    .loglink:hover {
+        text-decoration: underline;
+    }
+
+    .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .navselect {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+        transition: 0.3s;
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 0px;   
+    }
+
+    .navbar a:hover {
+        color: rgb(18, 0, 82);
+        transition: 0.5s;
+    }
+
+    .navbar a:not(:hover) {
+        transition: 0.5s;
+    }
+
+
+
+    .continfo1 {
+        position: relative;
+        display: block;
+        margin-top: 20px;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: rgb(199, 199, 199);
+        position: relative;
+    }
+
+    .bottombar {
+        background-color: rgb(44, 44, 44);
+        display: block;
+    }
+
+    .bottominfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .bottomlogo {
+        width: 20%;
+    }
+
+    .contact a, pre {
+        font-size: 18px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        line-height: 25px;}
+
+.mySlides {display:none;
+z-index: 9999;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;z-index: 9999;}
+.w3-badge {height:13px;width:13px;padding:0;z-index: 9999;}
+        
+#my_centered_buttons { 
+        display: flex; 
+        justify-content: center; 
+        text-align: center;z-index: 9999;}
+
+        .bluediv {
+            position: absolute;
+            top: 500px;
+            width: 100%;
+            z-index: 0;
+    
+                    }
+
+
+    .ptitle {
+        background: transparent;
+        background-color: rgb(255, 248, 157);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 1000px;
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+
+    }
+
+
+
+
+    .titlex {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        font-size: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin: 15px;
+    }
+
+    .moveon {
+        position: absolute;
+        top: 50px;
+        right: 45px;
+        width: 50px;
+    }
+</style>
+
+<main>
+    <div class="topheader">
+        <div class="headerinfo">
+            <pre><a href="soupuhome.html"><img class="logo" src="soupedulogo_white.png"></a></pre>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Press 'enter' to search" name="search">
+                </form>
+              </div>
+            <div class="login">
+                <p class="loglink">Login</u></p>
+            </div>
+            <div class="index">
+                <p class="loglink">A-Z Index</u></p>
+            </div>
+            <div class="email">
+                <p class="loglink">Email</u></p>
+            </div>
+            <div class="news">
+                <p class="loglink">News & Events</u></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navinfo">
+            <pre class="navselect">
+<a href="admissions.html">ADMISSIONS</a>                        <a href="academics.html">ACADEMICS</a>                        <a href="#">STORE</a>                        <a href="alumni.html">ALUMNI</a>                        <a href="athletics.html">ATHLETICS</a>                       <a href="soupuabout.html">ABOUT</a>
+            </pre>
+        </div>
+    </div>
+    <img class="bluediv" src="bluediv.png">
+    <div class="maincontent">
+        <div class="ptitle">
+            <pre class="titlex"> __________   <i>☆ Campus Store ☆</i>  __________</pre>
+        </div>
+<br>
+<br>
+<div class="w3-content w3-display-container" style="max-width:400px">
+    <img class="mySlides" src="sticker3.jpg" style="width:100%">
+    <img class="mySlides" src="sticker2.jpg" style="width:100%">
+    <img class="mySlides" src="sticker1.jpg" style="width:100%">
+    <img class="mySlides" src="sticker4.jpg" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    </div>
+  </div>
+  <br>
+  <div class="shopstuff">
+ <center><strong>~&#9734;~STICKER PACK~&#9734;~</strong></center>
+ <br> <center><strong>$10</strong></center><br>
+  <center>comes with like, at least 8 stickers, including (but not limited to) the ones shown here</center>
+</div>
+<br>
+<div id="my_centered_buttons">
+<a href="#"><button onclick="inspiration( );">buy</button></a> </div>
+
+  
+        <div class="continfo1">
+            
+        </div>
+    </div>
+
+    <div class="bottombar">
+        <div class="bottominfo">
+            <img class="bottomlogo" src="soupedulogo_white.png">
+            <a href="stoopkid.html"><img class="moveon" src="moveonwhite.png"></a>
+
+            <pre class="contact">
+<strong><span style="line-height: 40px;">Contact</span></strong>
+69 A Field Somwhere
+Soup Town, Souplandia
+<a href="mailto: soupzine69@gmail.com"><u>admin@soupuniveristy.edu</u></a>                                                                                                             <u>Copyright</u> | <u>Privacy</u> | <u>Credits</u> | <span style="font-family: sans-serif">©</span> Soup Univeristy
+            </pre>
+        </div>
+
+    </div>
+
+
+</main>
+
+<script>
+    	
+	function inspiration ( ) {
+		alert("to make this purchase, venmo @SOUPZINE69 $10 with your FULL NAME and ADDRESS. please make sure that this is sent PRIVATELY to keep your info safe. drop your email too and we will update you on shipping. thank u i love u."); 
+					}
+	
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+
+</html>

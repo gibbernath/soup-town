@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.png"/>
+</head>
+<html>
+<style>
+        .polaroid {
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #bbbbbb;
+        border-width: 1px;
+        width: 320px;
+        background-color: White;
+        display: inline-block;
+        }
+      
+        div.polaroid:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+        }
+      
+      .houseinfo {
+        line-height: 2px;
+      }
+      
+        }
+
+</style>
+
+
+<main>
+    
+    <div class="polaroid">
+        <div class="w3-content w3-display-container slideshow">
+          <img class="mySlides1" src="YNH1.png" style="width:100%">
+          <img class="mySlides1" src="YNH2.png" style="width:100%">
+          <img class="mySlides1" src="YNH3.png" style="width:100%">
+          <img class="mySlides1" src="YNH4.png" style="width:100%">
+        </div>
+            <div class="container">
+                <p style="color:white; margin:0px; text-align: center; padding-top: 3px; padding-bottom: 3px; background-color: darkgrey;">
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+                </p>
+                <div class="houseinfo">
+                  <h3 style="color: rgb(70, 70, 70); text-align: center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">$1,200,000</h3>
+                  <br>
+                  <h3 style="text-align:center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">33 Middle of the Ocean Pl</h3>
+                  <p style="color: rgb(124, 124, 124); font-size: 12px; text-align: center;">SOUTHERN SOUPLANDIAN MOUTAINS</p>
+                </div>
+                <br>
+                <br>
+            <div class="houseinfo">
+              <pre style="text-align: center;"><img style="width:10%;" src="bed.png">        <img style="width:10%;" src="toilet.png">       <img style="width:10%;" src="bricks.png"></pre>
+              <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                SLEEPS: 0               TOILETS: 0              BRICKS: Its</strong></pre>
+              <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                                                                                       only bricks</strong></pre>
+              <br>
+              <p style="text-align: center; font-size: 12px; color:rgb(124, 124, 124)"><a href="#"><u>Learn More</u></a></p>
+            </div>
+      </div>
+    </div>   
+    <div class="polaroid">
+        <div class="w3-content w3-display-container slideshow">
+          <img class="mySlides2" src="YNH1.png" style="width:100%">
+          <img class="mySlides2" src="YNH2.png" style="width:100%">
+          <img class="mySlides2" src="YNH3.png" style="width:100%">
+          <img class="mySlides2" src="YNH4.png" style="width:100%">
+        </div>
+            <div class="container">
+                <p style="color:white; margin:0px; text-align: center; padding-top: 3px; padding-bottom: 3px; background-color: darkgrey;">
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                </p>
+                <div class="houseinfo">
+                  <h3 style="color: rgb(70, 70, 70); text-align: center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">$1,200,000</h3>
+                  <br>
+                  <h3 style="text-align:center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">33 Middle of the Ocean Pl</h3>
+                  <p style="color: rgb(124, 124, 124); font-size: 12px; text-align: center;">SOUTHERN SOUPLANDIAN MOUTAINS</p>
+                </div>
+                <br>
+                <br>
+            <div class="houseinfo">
+              <pre style="text-align: center;"><img style="width:10%;" src="bed.png">        <img style="width:10%;" src="toilet.png">       <img style="width:10%;" src="bricks.png"></pre>
+              <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                SLEEPS: 0               TOILETS: 0              BRICKS: Its</strong></pre>
+              <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                                                                                       only bricks</strong></pre>
+              <br>
+              <p style="text-align: center; font-size: 12px; color:rgb(124, 124, 124)"><a href="#"><u>Learn More</u></a></p>
+            </div>
+      </div>
+    </div>
+
+
+</main>
+
+
+
+
+
+
+
+<script>
+
+
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+
+
+</script> 
+</html>

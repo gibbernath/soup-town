@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ih8hoes</title>
+	<link rel="shortcut icon" type="image/jpg" href="/favicon.png"/>
+	<meta name="generator" content="BBEdit 13.0" />
+</head>
+<style>
+body {
+background-image: url('main-image.jpg')
+}
+h1 {
+text-align: center;
+background-color: gold;
+}
+img {
+display: block;
+margin-right: auto;
+margin-left: auto;
+z-index:2;}
+
+video {
+margin-right: auto;
+margin-left: auto;
+z-index:1;
+border-width: 10px;
+border-color: gold;
+border-style: outset;}
+
+#my_centered_buttons { display: flex; justify-content: center; 
+text-align: center;}
+
+.buttons {
+margin-right: auto; 
+margin-left: auto;
+margin-top: 500px;
+}
+</style>
+<body>
+<h1>historical commentary on king henry tha viii</h1>
+<div style="text-align:center"> 
+  <button onclick="playPause()">play (also pause)</button> 
+  <br><br>
+  
+  <video id="video1" width="500px">
+    <source src="ih8hoes.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1080; 
+} 
+
+function makeSmall() { 
+    myVideo.width =280 ; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 560; 
+} 
+</script> 
+<div id="my_centered_buttons">
+<a href="hikikomori.html"><button class=buttons>accelerate</a></button>
+</body>
+</html>

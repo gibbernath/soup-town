@@ -1,0 +1,22 @@
+hey chris, 
+hope you are donig well. 
+my final project imagines a music venue in the andromeda galaxy 
+where the likes of a rapping frog, dj bjork (who makes drum and bass
+remixes of weezer songs) and bizare indie rock bands meet and all play in 
+the same chambers... these chambers belong to craig. to employ the techniques
+that we learned this semester I used photoshop and illustrator to do the graphic
+design for the website and the posters announcing the upcoming shows. I also 
+used html and css to create the website from scratch and composed tracks for 
+each of the fictional bands (the last one with the help of my friend on vocals).
+in this project I was exploring lo fi website aesthetics that draw from some of my research
+on venue webpage aesthetics from early internet days which I was able to discover
+using the waybackmachine. 
+
+to get to the page locate the INDEX.html file in this folder and click on it!!
+
+thank you for an extremely informative and fun semester. hopefully I can work with 
+you or take another class with you in the future:)
+
+best, 
+
+Gib 

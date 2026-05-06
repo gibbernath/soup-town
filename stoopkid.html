@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Stoop Kid</title>
+<link rel="shortcut icon" type="image/jpg" href="/favicon.png"/>
+    </head>
+
+<style>
+    body {
+        background-color: rgb(151, 151, 151);
+    }
+
+    .stoopkid {
+        width: 15%;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .bus {
+        width: 45%;
+    }
+
+    .bus:hover {
+        content: url(bus2.png);
+        width: 45%;
+    }
+
+    .stoopkid:hover {
+        content:url(stoopkid2.png);
+        width: 15%;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .bar {
+        background-color: grey;
+        color: grey;
+    }
+
+</style>
+
+<main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img class="stoopkid" onclick="inspiration( );" src="stoopkid.png">
+    <marquee behavior="scroll"><a href="magnify.html"><img class="bus" src="bus.png"></a></marquee>
+
+</main>
+<script>
+					function inspiration ( ) {
+						alert("wait for the bus, it will arrive shortly."); 
+					}
+
+</script>
+</html>

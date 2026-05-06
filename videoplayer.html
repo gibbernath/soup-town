@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="generator" content="BBEdit 13.0" />
+</head>
+<style>
+body {
+background-image: url('raccoonn.jpg');
+}
+p {
+color: white;}
+
+</style> 
+<body>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">click this one</button>
+  <button onclick="makeNormal()">or this one</button>
+  <button onclick="makeSmall()">preferably dont click this one but its your life</button>
+  <br><br>
+  <video id="video1" width="1080">
+    <source src="badbich.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1080; 
+} 
+
+function makeSmall() { 
+    myVideo.width =280 ; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 560; 
+} 
+</script> 
+
+<p><center>click <a href="stupidcat.html"><strong>here</strong></a> to see my pussy.<center></p>
+
+</body> 
+</html>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Not Found</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body {
+  background: linear-gradient(90deg, pink, rgb(104, 187, 255), yellow)
+}
+
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  width: 40%;
+
+}
+
+</style>
+<body>
+  <img class="pic" src="404.png">
+</body>
