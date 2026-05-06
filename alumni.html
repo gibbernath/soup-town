@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soup University</title>
+    <meta charset="UTF-8">
+    <link rel='icon' href='soupufavicon.png' type='image/x-icon'>
+</head>
+
+<style>
+    body {
+        background-color: white;
+        margin: 0px;
+    }
+
+    .topheader {
+        background-color: rgb(18, 0, 82);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .headerinfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .search-container {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+    input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 240px;
+        margin: 0px;
+        padding: 14px;
+    }
+
+    input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+
+    .login {
+        position: absolute;
+        right: 300px;
+        top: 20px;
+    }
+
+    .index {
+        position: absolute;
+        right: 353px;
+        top: 20px;
+    }
+
+    .email {
+        position: absolute;
+        right: 433px;
+        top: 20px;
+    }
+
+    .news {
+        position: absolute;
+        right: 483px;
+        top: 20px;
+    }
+
+    .navbar {
+        background-color: rgb(157, 191, 255);
+        overflow: hidden;
+    }
+
+    .navinfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .loglink {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        color: white; 
+        font-size: 16px;
+
+    }
+
+    .loglink:hover {
+        text-decoration: underline;
+    }
+
+    .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .navselect {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+        transition: 0.3s;
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 0px;   
+    }
+
+    .navbar a:hover {
+        color: rgb(18, 0, 82);
+        transition: 0.5s;
+    }
+
+    .navbar a:not(:hover) {
+        transition: 0.5s;
+    }
+
+    .continfo1 {
+        position: relative;
+        display: block;
+        margin-top: 20px;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+        height: 2060px;
+    }
+
+    .bottombar {
+        background-color: rgb(44, 44, 44);
+        display: block;
+    }
+
+    .bottominfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .bottomlogo {
+        width: 20%;
+    }
+
+    .contact a, pre {
+        font-size: 18px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        line-height: 25px;
+        
+    }
+
+    .ptitle {
+        background-color: rgb(219, 219, 219); 
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+    }
+
+    .titlex {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        font-size: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin: 15px;
+    }
+
+    .spoondiv {
+        width: 50px;
+    }
+
+    .introtext {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        background-color: transparent;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        width: 1055px;
+        line-height: 28px;
+        color: rgb(44, 44, 44);
+    }
+
+    .notable {
+        position: absolute;
+        top: 220px;
+        right: 0px;
+        z-index: 9999;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        background-color: rgb(18, 0, 82); 
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .mattgrad {
+        position: absolute;
+        top: 650px;
+        left: 0px;  
+        width: 200px;
+    }
+
+    .container {
+    }
+
+    .container:hover .mattgrad {
+        transform: scale(1.05);
+        transition: 0.3s;
+        opacity: 0.3;
+    }
+
+    .container:hover .middle {
+        opacity: 1;
+    }
+
+    .mattgrad:not(:hover) {
+        transition: 0.3s;
+    }
+
+    .housediv {
+        position: absolute;
+        top: 530px;
+        width: 100%;
+    }
+
+    .spoondiv2 {
+        position: absolute;
+        top: 650px;
+        left: 240px; 
+        width: 50px;
+    }
+
+    .mattext {
+        position: absolute;
+        top: 620px;
+        left: 320px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 27px;
+    }
+
+    .mattext2 {
+        position: absolute;
+        top: 690px;
+        left: 320px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+
+    .quote {
+        position: absolute;
+        top: 815px;
+        left: 245px; 
+        background-color: transparent;
+        width: 350px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 22px;
+        border-left-color: rgb(18, 0, 82);
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-style: solid;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 790px;
+        left: 100px; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+
+    .hovertext { 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: rgb(18, 0, 82);
+        padding: 15px;
+        opacity: 1;
+    }
+
+    .marcusgrad {
+        position: absolute;
+        top: 1000px;
+        right: 0px;  
+        width: 200px;
+    }
+
+    .spoondivtwo {
+        position: absolute;
+        top: 1000px;
+        right: 250px;
+        width: 50px;
+    }
+
+    .marcustext {
+        position: absolute;
+        top: 970px;
+        right: 330px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 27px;
+    }
+
+    .marcusquote {
+        position: absolute;
+        top: 1165px;
+        right: 250px; 
+        background-color: transparent;
+        width: 350px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 22px;
+        border-left-color: transparent;
+        border-right-color: black;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-style: solid;
+    }
+
+    .bluediv {
+        z-index: 0;
+        width: 100%;
+        position: absolute;
+        top: 1000px;
+    }
+
+    .bluedivtwo {
+        z-index: 0;
+        width: 100%;
+        position: absolute;
+        top: 1540px;
+    }
+
+    .containertwo {
+    }
+
+    .middletwo {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 1130px;
+        left: 1040px; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .hovertexttwo { 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: rgb(18, 0, 82);
+        padding: 15px;
+        opacity: 1;
+    }
+
+    .containertwo:hover .marcusgrad {
+        transform: scale(1.05);
+        transition: 0.3s;
+        opacity: 0.3;
+    }
+
+    .containertwo:hover .middletwo {
+        opacity: 1;
+    }
+
+    .marcusgrad:not(:hover) {
+        transition: 0.3s;
+    }
+
+    .margograd {
+        position: absolute;
+        top: 1330px;
+        left: 0px;  
+        width: 200px;
+    }
+
+    .containerthree {
+    }
+
+    .containerthree:hover .margograd {
+        transform: scale(1.05);
+        transition: 0.3s;
+        opacity: 0.3;
+    }
+
+    .container:hover .middlethree {
+        opacity: 1;
+    }
+
+    .margograd:not(:hover) {
+        transition: 0.3s;
+    }
+
+    .margotext {
+        position: absolute;
+        top: 1300px;
+        left: 320px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 27px;
+    }
+
+    .margotext2 {
+        position: absolute;
+        top: 1380px;
+        left: 320px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+
+    .quotethree {
+        position: absolute;
+        top: 1490px;
+        left: 245px; 
+        background-color: transparent;
+        width: 350px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 22px;
+        border-left-color: rgb(18, 0, 82);
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-style: solid;
+    }
+
+    .middlethree {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 1790px;
+        left: 100px; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .hovertextthree { 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: rgb(18, 0, 82);
+        padding: 15px;
+        opacity: 1;
+    }
+
+    .spoondivthree {
+        position: absolute;
+        top: 1330px;
+        left: 240px;
+        width: 50px;
+    }
+
+    .containerfour {
+    }
+
+    .middlefour {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 1800px;
+        left: 1040px; 
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .hovertextfour{ 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background-color: rgb(18, 0, 82);
+        padding: 15px;
+        opacity: 1;
+    }
+
+    .containerfour:hover .slavojgrad {
+        transform: scale(1.05);
+        transition: 0.3s;
+        opacity: 0.3;
+    }
+
+    .containerfour:hover .middlefour {
+        opacity: 1;
+    }
+
+    .slavojgrad:not(:hover) {
+        transition: 0.3s;
+    }
+
+
+    .slavojgrad {
+        position: absolute;
+        top: 1660px;
+        right: 0px;  
+        width: 200px;
+    }
+
+    .spoondiv4 {
+        position: absolute;
+        top: 1660px;
+        right: 250px;
+        width: 50px;
+    }
+
+    .slavojtext {
+        position: absolute;
+        top: 1630px;
+        right: 330px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 27px;
+    }
+
+    .slavojquote {
+        position: absolute;
+        top: 1825px;
+        right: 250px; 
+        background-color: transparent;
+        width: 350px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 22px;
+        border-left-color: transparent;
+        border-right-color: black;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-style: solid;
+        margin-bottom: 50px;
+    }
+
+    .slavojtext2 {
+        position: absolute;
+        top: 1700px;
+        right: 330px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: black;
+        text-align: right;
+    }
+
+    .moveon {
+        position: absolute;
+        top: 50px;
+        right: 45px;
+        width: 50px;
+    }
+</style>
+
+<main>
+    <div class="topheader">
+        <div class="headerinfo">
+            <pre><a href="soupuhome.html"><img class="logo" src="soupedulogo_white.png"></a></pre>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Press 'enter' to search" name="search">
+                </form>
+              </div>
+            <div class="login">
+                <p class="loglink">Login</u></p>
+            </div>
+            <div class="index">
+                <p class="loglink">A-Z Index</u></p>
+            </div>
+            <div class="email">
+                <p class="loglink">Email</u></p>
+            </div>
+            <div class="news">
+                <p class="loglink">News & Events</u></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navinfo">
+            <pre class="navselect">
+<a href="admissions.html">ADMISSIONS</a>                        <a href="academics.html">ACADEMICS</a>                        <a href="soupu_store.html">STORE</a>                        <a href="alumni.html">ALUMNI</a>                        <a href="athletics.html">ATHLETICS</a>                       <a href="soupuabout.html">ABOUT</a>
+            </pre>
+        </div>
+    </div>
+
+    <div class="maincontent">
+        <img class="bluediv" src="bluediv.png">
+        <img class="bluedivtwo" src="bluedivtwo.png">
+        <div class="continfo1">
+            <div class="ptitle">
+                <pre class="titlex">  ____    <i>Alumni</i>     ____________________________</pre>
+            </div>
+            <img class="spoondiv" src="spoondarkblue.png">
+            <p class="introtext">Our alumni have accomplished more than any other university in the multiverse.  With a variety of interetsts, skills, and athletic abilities, we are proud to present notable alums from many of our previous classes. Our Office of Alumni Relations is your resource to stay connected with the community you will or have already built here - a community that lasts for life.  And if you are considering applying, let these success stories inspire and convice you that Soup U is where you belong. </p>
+            <p class="notable">Notable Alumni</p>
+        <div id="matt">
+            <div class="container">
+                <div class="middle">
+                    <div class="hovertext">
+                    Read More
+                    </div>
+                </div>
+                <a href='#'><img class="mattgrad" src="mattgrad_crop.png"></a>
+            </div>
+            <img class="spoondivtwo" src="spoondarkblue.png">
+            <p class="mattext"><i>Matt</i><span style="opacity: 60%;"> |  Class of 2003</span></p>
+            <pre class="mattext2">
+<span style="opacity: 60%;"><i>double major:</i></span>
+BA, Studio Art
+BA, Classical Studies
+            </pre>
+            <p class="quote"><span style="opacity: 100%;"> "<i>Omnes vulnerant, ultima necat. </i>You must ask yourself, what wounds you the least? "</span></p>
+        </div>
+        <div id="marcus">
+          <div class="containertwo">
+                <div class="middletwo">
+                    <div class="hovertexttwo">
+                    <u>Please</u> Read More
+                    </div>
+                </div> 
+                <a href='marcus.html'><img class="marcusgrad" src="marcusgrad.jpg"></a>
+            </div>
+                <img class="spoondiv2" src="spoondarkblue.png">
+                <p class="marcustext"><i>Marcus</i></p>
+                <!--<p class="marcusquote"><span style="opacity: 70%;">blah blah blah blah bla blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blahh"</span></p>-->
+            
+        </div>
+        <div id="margo">
+            <div class="containerthree">
+                <div class="middlethree">
+                    <div class="hovertextthree">
+                    Read More
+                    </div>
+                </div>
+                <a href='#'><img class="margograd" src="margot.jpg"></a>
+            </div>
+            <img class="spoondivthree" src="spoondarkblue.png">
+            <p class="margotext"><i>Margo Martindale</i><span style="opacity: 60%;"> |  Class of 1973</span></p>
+            <pre class="margotext2">
+<span style="opacity: 60%;"><i>major:</i></span>
+BA, Theatre and Drama
+            </pre>
+            <p class="quotethree"><span style="opacity: 100%;"> "Day 75 at sea: theres a darkness brewing on the horizon."</span></p>
+        </div>
+
+        <div id="slavoj">
+            <div class="containerfour">
+                  <div class="middlefour">
+                      <div class="hovertextfour">
+                      Uhhh..
+                      </div>
+                  </div> 
+                  <a href='#'><img class="slavojgrad" src="slavoj.png"></a>
+              </div>
+                  <img class="spoondiv4" src="spoondarkblue.png">
+                  <p class="slavojtext"><i>Slavoj Zizek</i><span style="opacity: 100%;"> |  Class of 1981</span></i></p>
+                  <pre class="slavojtext2">
+<span style="opacity: 60%;"><i>major:</i></span>
+BA, Philosophy
+BA, Sociology
+                                </pre>
+                  <p class="slavojquote"><span style="opacity: 100%;">“I think boredom is the beginning of every authentic act.  Boredom opens up the space for new engagements. Without boredom? No creativity. If you are not bored, you just stupidly enjoy the situation in which you are. At Soup U, I was constantly bored. Thank god for this instituion.”</span></p>
+              
+          </div>
+
+        </div>
+        <img class="housediv" src="housediv.png">
+    </div>
+
+    <div class="bottombar">
+        <div class="bottominfo">
+            <img class="bottomlogo" src="soupedulogo_white.png">
+            <a href="stoopkid.html"><img class="moveon" src="moveonwhite.png"></a>
+
+            <pre class="contact">
+<strong><span style="line-height: 40px;">Contact</span></strong>
+69 A Field Somwhere
+Soup Town, Souplandia
+<a href="mailto: soupzine69@gmail.com"><u>admin@soupuniveristy.edu</u></a>                                                                                                             <u>Copyright</u> | <u>Privacy</u> | <u>Credits</u> | <span style="font-family: sans-serif">©</span> Soup Univeristy
+            </pre>
+        </div>
+
+    </div>
+
+
+</main>
+
+<script>
+
+
+</script>
+
+</html>

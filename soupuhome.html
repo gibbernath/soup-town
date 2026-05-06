@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soup University</title>
+    <meta charset="UTF-8">
+    <link rel='icon' href='soupufavicon.png' type='image/x-icon'>
+</head>
+
+<style>
+    body {
+        background-color: white;
+        margin: 0px;
+    }
+
+    .topheader {
+        background-color: rgb(18, 0, 82);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .headerinfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .search-container {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+    input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 240px;
+        margin: 0px;
+        padding: 14px;
+    }
+
+    input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+
+    .login {
+        position: absolute;
+        right: 300px;
+        top: 20px;
+    }
+
+    .index {
+        position: absolute;
+        right: 353px;
+        top: 20px;
+    }
+
+    .email {
+        position: absolute;
+        right: 433px;
+        top: 20px;
+    }
+
+    .news {
+        position: absolute;
+        right: 483px;
+        top: 20px;
+    }
+
+    .navbar {
+        background-color: rgb(157, 191, 255);
+        overflow: hidden;
+    }
+
+    .navinfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .loglink {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        color: white; 
+        font-size: 16px;
+
+    }
+
+    .loglink:hover {
+        text-decoration: underline;
+    }
+
+    .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .navselect {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+        transition: 0.3s;
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 0px;   
+    }
+
+    .navbar a:hover {
+        color: rgb(18, 0, 82);
+        transition: 0.5s;
+    }
+
+    .navbar a:not(:hover) {
+        transition: 0.5s;
+    }
+
+    .pic {
+        width: 100%;
+    }
+
+    .topimg {
+        position: relative;
+        color: white;
+        text-align: center;
+    }
+
+    .pictext {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        background-color: black;
+        opacity: 60%;
+        padding: 30px;
+        width: 500px;
+    }
+
+    .pictext h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+
+    .pictext p {
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .buttone {
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+        width: 100px;    
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        padding: 10px;
+        }
+
+    .buttone:hover {
+        color: black;
+        transition: 0.5s;
+        background-color: white;
+    }
+
+    .buttone:not(:hover) {
+        transition: 0.5s;
+    }
+
+    .continfo1 {
+        position: relative;
+        display: block;
+        margin-top: 20px;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .spoondiv {
+        width: 70px;
+    }
+
+    .campuslife {
+        padding-top: 0px;
+        position: absolute;
+        left: 100px; 
+        top: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 32px;
+    }
+
+    .campustext {
+        position: absolute;
+        left: 100px;
+        top: 90px;
+        width: 465px;
+        background-color: transparent;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: rgb(78, 78, 78);
+        text-align: justify;
+    }
+
+    .line {
+        position: absolute;
+        left: 100px;
+        bottom: 150px;
+        color: rgb(157, 191, 255);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .dorm {
+        position: absolute;
+        right: 0px;
+        width: 45%;
+    }
+
+    .onehun {
+        padding-top: 0px;
+        position: absolute;
+        left: 135px; 
+        top: 210px;
+        font-family: Times, 'Times New Roman', serif;
+        font-size: 30px;
+        color: rgb(78, 78, 78);
+    }
+
+    .waterp {
+        padding-top: 0px;
+        position: absolute;
+        left: 120px; 
+        top: 285px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;  
+        color: rgb(78, 78, 78);
+    }
+
+    .divider2 {
+        padding-top: 0px;
+        position: absolute;
+        left: 125px; 
+        top: 245px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;  
+        color: rgb(157, 191, 255);
+    }
+
+    .onest {
+        padding-top: 0px;
+        position: absolute;
+        left: 430px; 
+        top: 210px;
+        font-family: Times, 'Times New Roman', serif;
+        font-size: 30px;
+        color: rgb(78, 78, 78);
+    }
+
+    .dermis {
+        padding-top: 0px;
+        position: absolute;
+        left: 360px; 
+        top: 280px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;  
+        color: rgb(78, 78, 78);
+    }
+
+    .dermis2 {
+        padding-top: 0px;
+        position: absolute;
+        left: 400px; 
+        top: 305px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;  
+        color: rgb(78, 78, 78);
+    }
+
+    .divider3 {
+        padding-top: 0px;
+        position: absolute;
+        left: 360px; 
+        top: 245px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;  
+        color: rgb(157, 191, 255);
+    }
+
+
+    .resbutton {
+        padding-top: 0px;
+        position: absolute;
+        left: 100px; 
+        top: 350px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;  
+        color: white;
+        background-color: rgb(18, 0, 82);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-color: rgb(18, 0, 82);
+        border-style: solid;
+    }
+
+
+    .resbutton:hover {
+        padding-top: 0px;
+        position: absolute;
+        left: 100px; 
+        top: 350px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;  
+        color: rgb(18, 0, 82);
+        background-color: transparent;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-color: rgb(18, 0, 82);
+        border-style: solid;
+        transition: 0.5s;
+    }
+
+    .resbutton:not(:hover) {
+        transition: 0.5s;
+    }
+
+    .matt {
+        width: 45%;
+        position: absolute;
+        top: 500px;
+    }
+
+    .spoondiv2 {
+        position: absolute;
+        width: 70px;
+        right: 0px;
+        top: 500px;
+    }
+
+    .alumnicont {
+        padding-top: 0px;
+        position: absolute;
+        right: 110px; 
+        top: 470px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 32px;
+    }
+
+    .alumdiv1 {
+        position: absolute;
+        right: 110px; 
+        top: 485px;
+        color: rgb(157, 191, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 37px;
+    }
+
+    .alumtext {
+        position: absolute;
+        right: 110px; 
+        top: 570px;
+        width: 455px;
+        background-color: transparent;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: rgb(78, 78, 78);
+        text-align:justify;
+    }
+
+    .alumbutton {
+        padding-top: 0px;
+        position: absolute;
+        right: 110px; 
+        top: 730px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;  
+        color: white;
+        background-color: rgb(18, 0, 82);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-color: rgb(18, 0, 82);
+        border-style: solid;
+    }
+
+    .alumbutton:hover {
+        padding-top: 0px;
+        position: absolute;
+        right: 110px; 
+        top: 730px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;  
+        color: rgb(18, 0, 82);
+        background-color: transparent;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-color: rgb(18, 0, 82);
+        border-style: solid;
+        transition: 0.5s;
+    }
+
+    .alumbutton:not(:hover) {
+        transition: 0.5s;
+    }
+
+    .matt03 {
+        position: absolute;
+        right: 450px; 
+        top: 760px;
+        width: 195px;
+        background-color: rgb(219, 219, 219);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 13px;
+        color: black;  
+        padding: 15px;
+        padding-bottom: 0px;
+        z-index: 0;
+        line-height: 15px;
+    }
+
+    .alley {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
+
+    .athtextbox {
+        position: absolute;
+        top: 960px;
+        width: 483px;
+        background-color: rgb(219, 219, 219);
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        z-index: 9999;
+    }
+
+    .athleticss {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 32px;
+        line-height: 25px;
+        margin-bottom: 0px;
+        color: black;
+    }
+
+    .athtext {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    .athbutton {
+        padding-top: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px; 
+        text-align: center; 
+        color: white;
+        background-color: rgb(18, 0, 82);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-color: rgb(18, 0, 82);
+        border-style: solid;
+        width: 160px;
+    }
+
+    .athbutton:hover {
+        padding-top: 0px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;  
+        color: rgb(18, 0, 82);
+        background-color: transparent;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-color: rgb(18, 0, 82);
+        border-style: solid;
+        transition: 0.5s;
+    }
+
+    .athbutton:not(:hover) {
+        transition: 0.5s;
+    }
+
+    .bottombar {
+        background-color: rgb(44, 44, 44);
+        display: block;
+    }
+
+    .bottominfo {
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1140px;
+        background-color: transparent;
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .bottomlogo {
+        width: 20%;
+    }
+
+    .contact a, pre {
+        font-size: 18px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        line-height: 25px;  
+    }
+
+    .moveon {
+        position: absolute;
+        top: 50px;
+        right: 45px;
+        width: 50px;
+    }
+</style>
+
+<main>
+    <div class="topheader">
+        <div class="headerinfo">
+            <pre><a href="soupuhome.html"><img class="logo" src="soupedulogo_white.png"></a></pre>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Press 'enter' to search" name="search">
+                </form>
+              </div>
+            <div class="login">
+                <p class="loglink">Login</u></p>
+            </div>
+            <div class="index">
+                <p class="loglink">A-Z Index</u></p>
+            </div>
+            <div class="email">
+                <p class="loglink">Email</u></p>
+            </div>
+            <div class="news">
+                <p class="loglink">News & Events</u></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navinfo">
+            <pre class="navselect">
+<a href="admissions.html">ADMISSIONS</a>                        <a href="academics.html">ACADEMICS</a>                        <a href="soupu_store.html">STORE</a>                        <a href="alumni.html">ALUMNI</a>                        <a href="athletics.html">ATHLETICS</a>                       <a href="soupuabout.html">ABOUT</a>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="topimg">
+        <img class="pic" src="soupunigif3.gif">
+        <div class="pictext">
+            <h2>The Council Welcomes You</h2>
+            <p id="whitext">With wide open arms, Soup Univeristy's Council (pictured on campus, left) welcomes you to our school website.  Here at Soup U, we pride ourselves on academic and athletic experitse and of course our beloved students and alumni network. Check out our Academics page to see what interets you and get inspired with success stories from out current students and our beloved graduates...</p>
+            <a href="academics.html" style="text-decoration: none;"><p class="buttone">ACADEMICS</p></a>
+        </div>
+    </div>
+
+    <div class="maincontent">
+        <div class="continfo1">
+            <br><br>
+            <img class="spoondiv" src="spoondarkblue.png">
+            <p class="campuslife">Campus Life</p>
+            <p class="campustext">Along with our beautiful campus, Soup U provides some incredible student housing options. Our dorms are state of the art and up to the highest standards of modernity, and just wait until you hear about the water pressure!</p>
+            <h2 class="line">___________________________________</h2>
+            <img class="dorm" src="dorm.png">
+            <div id="factiods">
+                <p class="onehun">100 psi</p>
+                <p class="waterp">Water pressure</p>
+                <p class="divider2"><strong>__________</strong></p>
+                <p class="onest">1st</p>
+                <p class="dermis">dermis layer removed</p>
+                <p class="dermis2">immediately</p>
+                <p class="divider3"><strong>_______________ </strong></p>
+                <a href="http://socialistmodernism.com/" target="_blank"><p class="resbutton">VIEW RESLIFE</p></a>
+                <img class="matt" src="mattgrad.png">
+                <img class="spoondiv2" src="spoondarkblue.png">
+                <p class="alumnicont">Alumni</p>
+                <p class="alumdiv1">______________________</p>
+                <p class="alumtext">Soup U alum are among the most talented, versatile and determined beings in the multiverse. From seven time bowling champion, to the inventor of the banana, to Marcus, we are beyond proud of our accomplished alumni network.</p>
+                <a href="alumni.html"><p class="alumbutton">SEE FEATURED ALUMNI</p></a>
+                <pre class="matt03">
+<span style="color: black"><i><strong>Matt  <span style="font-family: sans-serif">'</span> 03</strong></i></span>
+7  Time Consecutive PBA Champion 
+BA Studio Art, BA Classical Studies
+                </pre>
+                
+                <div class="athtextbox">
+                    <pre class="athleticss">
+Athletics
+<span style="color: rgb(18, 0, 82); text-align: center;">___________________________</span></pre>
+                    <p class="athtext"> Pictured below is our beloved Banana Family Bowling alley - Olympic bowler Matt once bowled these very lanes. This is only one of our many top quality athletics facilities around campus. Discover our broad range of athletic options below! Go Raccoons!</p>
+                    <p class="athbutton"><a href="athletics.html" style="text-decoration: none; color: white;"> ATHLETICS PAGE</a></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="athletics">
+            <div class="breaks">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>
+            <img class="alley" src="bowling.jpg">
+        </div>
+    </div>
+
+    <div class="bottombar">
+        <div class="bottominfo">
+            <img class="bottomlogo" src="soupedulogo_white.png">
+            <a href="stoopkid.html"><img class="moveon" src="moveonwhite.png"></a>
+            <pre class="contact">
+<strong><span style="line-height: 40px;">Contact</span></strong>
+69 A Field Somwhere
+Soup Town, Souplandia
+<a href="mailto: soupzine69@gmail.com"><u>admin@soupuniveristy.edu</u></a>                                                                                                             <u>Copyright</u> | <u>Privacy</u> | <u>Credits</u> | <span style="font-family: sans-serif">©</span> Soup Univeristy
+            </pre>
+        </div>
+
+    </div>
+
+
+</main>
+
+<script>
+
+
+</script>
+
+</html>

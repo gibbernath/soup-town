@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    background-color: #5f5f5f;
+}
+
+    .headtext {
+        background-color: #d6d6d6;
+        display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+        width: 1000px;
+        border-color: black;
+        border-top-left-radius: 60%;
+    }
+
+    .logo {
+        position: inline;
+        background-color: transparent;
+        width: 90px;
+        left: 100px;
+    }
+
+    .textpad {
+        padding-top: 10px;
+		padding-left: 10px;
+        margin-bottom: 10px
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h2 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    }
+
+    h4 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    nav ul {
+        margin: 0px;
+        padding: 5px 0px 5px 30px;
+     }
+
+    nav li {
+        display: inline;
+        margin-right: 100px;
+    }
+
+    nav {
+        background-color: blue;
+    }
+
+    .droplink {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 2px 0px;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #d6d6d6;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.droplink2 {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 190px;
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 2px 0px;
+  display: block;
+}
+
+.dropdown-content2 a:hover {background-color: #d6d6d6;}
+
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+.dropdown2:hover .dropbtn {background-color: #3e8e41;}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.columnright {
+  float: right;
+  width: 800px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 1500px;
+}
+
+.columnleft {
+  float: left;
+  width: 200px;
+  padding: 5px;
+  height: 1500px; 
+}
+
+.mySlides, .mySlides2, .mySlides3, .mySlides4 {
+  display:none;
+  }
+
+  .polaroid {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #bbbbbb;
+  border-width: 1px;
+  width: 320px;
+  background-color: White;
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 20px;
+  }
+
+  div.polaroid:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .polaroid2 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #bbbbbb;
+  border-width: 1px;
+  width: 320px;
+  background-color: White;
+  display: inline-block;
+  }
+
+  div.polaroid2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .polaroid3 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #bbbbbb;
+  border-width: 1px;
+  width: 320px;
+  background-color: White;
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 20px;
+  }
+
+  div.polaroid3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .polaroid4 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #bbbbbb;
+  border-width: 1px;
+  width: 320px;
+  background-color: White;
+  display: inline-block;
+  }
+
+  div.polaroid4:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.houseinfo {
+  line-height: 2px;
+}
+
+#featured {
+  background-color: #b6b6b6;
+}
+
+</style>
+
+<main>
+<div class="titlebar">
+    <div href="#" class="headtext">
+        <pre class="textpad" style="font-size: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';"> <a href="soup_realty.html"><img class="logo" src="souprealtylogo2.png"><strong> Soup Realty, LLC</strong></a></pre>
+    <div id="navbar">
+        <nav>
+        <ul style="color: white;">
+            <li><a href="#">About</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <div class="dropdown2">
+                <li class="droplink2"><a href="#">Realtors</a></li>
+                    <div class="dropdown-content2">
+                        <a href="#"><u>Former Olympic Bowler: Matt</u></a>
+                        <a href="#"><u>A Raccoon</u></a>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <li class="droplink"><a href="#">Locations</a></li>
+                    <div class="dropdown-content">
+                         <a href="#"><u>The Ocean</u></a>
+                         <a href="#"><u>Tajikistan</u></a>
+                         <a href="#"><u>Main Street</u></a>
+                         <a href="#"><u>Andromeda Galaxy</u></a>
+                    </div>
+            </div>
+            <li class="droplink"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+    <div class="row">
+        <div class="columnright" style="background-color: rgb(233, 233, 233);">
+        <div class="propertymanagement">
+          <div class="featured-props">
+            <h2 id="featured" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: black; padding: 12px;"><strong>ALL LISTINGS</strong></h2>
+            <div class="polaroid">
+              <div class="w3-content w3-display-container slideshow">
+                <img class="mySlides1" src="YNH1.png" style="width:100%">
+                <img class="mySlides1" src="YNH2.png" style="width:100%">
+                <img class="mySlides1" src="YNH3.png" style="width:100%">
+                <img class="mySlides1" src="YNH4.png" style="width:100%">
+              </div>
+                  <div class="container">
+                      <p style="color:white; margin:0px; text-align: center; padding-top: 3px; padding-bottom: 3px; background-color: darkgrey;">
+                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+                      </p>
+                      <div class="houseinfo">
+                        <h3 style="color: rgb(70, 70, 70); text-align: center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">$1,200,000</h3>
+                        <br>
+                        <h3 style="text-align:center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">33 Middle of the Ocean Pl</h3>
+                        <p style="color: rgb(124, 124, 124); font-size: 12px; text-align: center;">SOUTHERN SOUPLANDIAN MOUTAINS</p>
+                      </div>
+                      <br>
+                      <br>
+                  <div class="houseinfo">
+                    <pre style="text-align: center;"><img style="width:10%;" src="bed.png">        <img style="width:10%;" src="toilet.png">       <img style="width:10%;" src="bricks.png"></pre>
+                    <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                SLEEPS: 0               TOILETS: 0              BRICKS: Its</strong></pre>
+                    <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                                                                                       only bricks</strong></pre>
+                    <br>
+                    <p style="text-align: center; font-size: 12px; color:rgb(124, 124, 124)"><a href="#"><u>Learn More</u></a></p>
+                  </div>
+            </div>
+          </div>   
+          <div class="polaroid2">
+              <div class="w3-content w3-display-container slideshow">
+                <img class="mySlides2" src="YNH1.png" style="width:100%">
+                <img class="mySlides2" src="YNH2.png" style="width:100%">
+                <img class="mySlides2" src="YNH3.png" style="width:100%">
+                <img class="mySlides2" src="YNH4.png" style="width:100%">
+              </div>
+                  <div class="container">
+                      <p style="color:white; margin:0px; text-align: center; padding-top: 3px; padding-bottom: 3px; background-color: darkgrey;">
+                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                      </p>
+                      <div class="houseinfo">
+                        <h3 style="color: rgb(70, 70, 70); text-align: center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">$1,200,000</h3>
+                        <br>
+                        <h3 style="text-align:center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">33 Middle of the Ocean Pl</h3>
+                        <p style="color: rgb(124, 124, 124); font-size: 12px; text-align: center;">SOUTHERN SOUPLANDIAN MOUTAINS</p>
+                      </div>
+                      <br>
+                      <br>
+                  <div class="houseinfo">
+                    <pre style="text-align: center;"><img style="width:10%;" src="bed.png">        <img style="width:10%;" src="toilet.png">       <img style="width:10%;" src="bricks.png"></pre>
+                    <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                SLEEPS: 0               TOILETS: 0              BRICKS: Its</strong></pre>
+                    <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                                                                                       only bricks</strong></pre>
+                    <br>
+                    <p style="text-align: center; font-size: 12px; color:rgb(124, 124, 124)"><a href="#"><u>Learn More</u></a></p>
+                  </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="polaroid3">
+            <div class="w3-content w3-display-container slideshow">
+              <img class="mySlides3" src="YNH1.png" style="width:100%">
+              <img class="mySlides3" src="YNH2.png" style="width:100%">
+              <img class="mySlides3" src="YNH3.png" style="width:100%">
+              <img class="mySlides3" src="YNH4.png" style="width:100%">
+            </div>
+              <div class="container">
+                    <div class="buttons">
+                    <p style="color:white; margin:0px; text-align: center; padding-top: 3px; padding-bottom: 3px; background-color: darkgrey;">
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                    </p>
+                    </div>
+                    <div class="houseinfo">
+                      <h3 style="color: rgb(70, 70, 70); text-align: center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">$1,200,000</h3>
+                      <br>
+                      <h3 style="text-align:center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">33 Middle of the Ocean Pl</h3>
+                      <p style="color: rgb(124, 124, 124); font-size: 12px; text-align: center;">SOUTHERN SOUPLANDIAN MOUTAINS</p>
+                    </div>
+                    <br>
+                    <br>
+                <div class="houseinfo">
+                  <pre style="text-align: center;"><img style="width:10%;" src="bed.png">        <img style="width:10%;" src="toilet.png">       <img style="width:10%;" src="bricks.png"></pre>
+                  <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                SLEEPS: 0               TOILETS: 0              BRICKS: Its</strong></pre>
+                  <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                                                                                       only bricks</strong></pre>
+                  <br>
+                  <p style="text-align: center; font-size: 12px; color:rgb(124, 124, 124)"><a href="#"><u>Learn More</u></a></p>
+                </div>
+              </div>
+        </div>
+
+          <div class="polaroid4">
+            <div class="w3-content w3-display-container slideshow">
+              <img class="mySlides4" src="YNH1.png" style="width:100%">
+              <img class="mySlides4" src="YNH2.png" style="width:100%">
+              <img class="mySlides4" src="YNH3.png" style="width:100%">
+              <img class="mySlides4" src="YNH4.png" style="width:100%">
+            </div>
+              <div class="container">
+                    <div class="buttons">
+                    <p style="color:white; margin:0px; text-align: center; padding-top: 3px; padding-bottom: 3px; background-color: darkgrey;">
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                    </p>
+                    </div>
+                    <div class="houseinfo">
+                      <h3 style="color: rgb(70, 70, 70); text-align: center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">$1,200,000</h3>
+                      <br>
+                      <h3 style="text-align:center; padding-top: 0px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">33 Middle of the Ocean Pl</h3>
+                      <p style="color: rgb(124, 124, 124); font-size: 12px; text-align: center;">SOUTHERN SOUPLANDIAN MOUTAINS</p>
+                    </div>
+                    <br>
+                    <br>
+                <div class="houseinfo">
+                  <pre style="text-align: center;"><img style="width:10%;" src="bed.png">        <img style="width:10%;" src="toilet.png">       <img style="width:10%;" src="bricks.png"></pre>
+                  <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                SLEEPS: 0               TOILETS: 0              BRICKS: Its</strong></pre>
+                  <pre style="font-size: 10px; color:rgb(124, 124, 124); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>                                                                                       only bricks</strong></pre>
+                  <br>
+                  <p style="text-align: center; font-size: 12px; color:rgb(124, 124, 124)"><a href="#"><u>Learn More</u></a></p>
+                </div>
+              </div>
+        </div>
+  
+        </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="columnleft" style="background-color: #aaa;">
+            <h4 style="text-align: center;">Explore our site</h4>
+            <form action="submit">
+                <input type="text" placeholder="">
+                <button type="submit">Search</button>
+            </form>
+            <ul style="list-style-type: none;">
+            <li><a href="#" style="color: blue;"><u>Matt's Story</u></a></li>
+            <br>
+            <li><a href="#" style="color: blue;"><u>Architechtural Philospohies</u></a></li>
+            <br>
+            <li><a href="#" style="color: blue;"><u>Gallery</u></a></li>
+            <br>
+            <li><a href="#" style="color: blue;"><u>The Lattice of Coincidence</u></a></li>
+            <br>
+            <li><a href="#featured" style="color: blue;"><u>Featured Properties</u></a></li>
+            <br>
+            <li><a href="https://www.youtube.com/watch?v=st6dN4jVVZI&t=30s" target="blank"><img src="netscape.gif"></a></li>
+            <li><a class="button1" href="#"><img style="width: 59%;" src="soupbutton.jpg"></a></li>
+            <li><a class="button1" href="file:///Users/gibbernath/Library/Messages/Attachments/b7/07/CA3C76DD-82D1-4FC5-9ACA-3CB254F87B70/craigs%20list/craigs-list.html"><img style="width: 59%;" src="craig.gif"></a></li>
+            <li><a class="button1" href="https://tilde.town/" target="blank"><img style="width: 59%;" src="tildetown.jpg"></a></li>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script> 
+  function inspiration ( ) {
+						alert("Soup Realty, LLC in licensed under SW 1.0.23 which states that if you hear a strange crying man on a talk radio station in Greenland, you must incorporate how that made you feel into a fake real estate website with properties exclusively listed as poorly rendered 3D worlds."); 
+					}
+
+
+
+
+var slideIndex = [1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(2, 1);
+showSlides(3, 1);
+showSlides(2, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+
+  </script> 
+
+
+</main>
+</html>
